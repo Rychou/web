@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #A29E9E;
+}
+.content{
+	margin: 50px auto;
+	width: 1000px;
+	height: 400px;
+}
+.content .box{
+	margin: 10px 50px;
+	width: 205px;
+	height: 220px;
+	float: left;
+}
+.box-misson .icon{
+	width: 170px;
+	height: 170px;
+	display: block;
+	background: url(../img/milk.png) no-repeat;
+	margin: 0 auto;
+	transition: all 0.2s;
+}
+.box-misson .icon:hover{
+	transform: scale(1.1) rotate(360deg);
+}
+.box-play .icon{
+	width: 170px;
+	height: 170px;
+	display: block;
+	background: url(../img/basketball.png) no-repeat;
+	margin: 0 auto;
+	transition: all 0.2s;
+}
+.box-play .icon:hover{
+	transform: scale(1.1) rotate(360deg);
+}
+.box-none .icon{
+	width: 170px;
+	height: 170px;
+	display: block;
+	background: url(../img/rice.png) no-repeat;
+	margin: 0 auto;
+	transition: all 0.2s;
+}
+.box-none .icon:hover{
+	transform: scale(1.1) rotate(360deg);
+}
+.box .button{
+	width: 150px;
+	height: 45px;
+	line-height: 45px;
+	position: relative;
+	display: block;
+	background: pink;
+	margin: 0 auto;
+	line-height: 45px;
+	vertical-align: middle;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	font-weight: bold;
+	color: #2373E9;
+	text-decoration: none;
+	padding-left: 10px;
+	background:url(../img/right.png) no-repeat 115px;
+	border: 2px solid rgba(255,255,255,0.6);
+	transition: all 0.2s;
+}
+.box .button:hover{
+	background-position: 125px center;
+	border:2px solid rgba(255,255,255,1);
+}
+
+.box .line{
+	background-color: #FFF;
+}
+/*设置顶部线条  宽度由0 》》163px*/
+.box .line-top{
+	width: 0px;
+	height: 2px;
+	display: block;
+	position: absolute;
+	top: -2px;
+	left: -100%;
+	transition: all 0.2s;
+}
+.box .button:hover .line-top{
+	width: 164px;
+	left: -2px;
+}
+.box .line-bottom{
+	width: 0px;
+	height: 2px;
+	display: block;
+	position: absolute;
+	top: 45px;
+	right: -100%;
+	transition: all 0.2s;
+}
+.box .button:hover .line-bottom{
+	width: 164px;
+	right: -2px;
+}
+.box .line-left{
+	width: 2px;
+	height: 0px;
+	display: block;
+	position: absolute;
+	bottom: -100%;
+	left: -2px;
+	transition: all 0.2s;
+}
+.box .button:hover .line-left{
+	height: 49px;
+	bottom: -2px;
+}
+.box .line-right{
+	width: 2px;
+	height: 0px;
+	display: block;
+	position: absolute;
+	top: -100%;
+	right: -2px;
+	transition: all 0.2s;
+}
+.box .button:hover .line-right{
+	height: 49px;
+	top: -2px;
+}
